@@ -2,7 +2,7 @@ from telebot import *
 
 bot = TeleBot('6123239125:AAFrcgVlnt5tgzGUTwyxCaXdsQhmtU6shi0')
 
-bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['start'])
 def start(message):
     chseKey = types.ReplyKeyboardMarkup(resize_keyboard=True)
     btn = types.KeyboardButton('Жми!')
