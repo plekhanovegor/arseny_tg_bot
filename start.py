@@ -8,4 +8,5 @@ def start(message):
     btn = types.KeyboardButton('Жми!')
     chseKey.add(btn)
     bot.send_message(message.from_user.id, 'Жми, чтобы узнать, какой ты Арсений!', reply_markup=chseKey)
-    
+
+bot.polling(none_stop=True, interval=0)
