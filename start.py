@@ -10,7 +10,7 @@ def push(message):
     bot.send_message(message.from_user.id, 'Жми, чтобы узнать, какой ты Арсений!', reply_markup=chseKey)
 
 @bot.message_handler(func=lambda message: True)
-def stickers(file):
+def stickers(message):
     #rnd = str(random.randint(1,9))
     sti = open('stickers/1.webm', 'rb')
     bot.send_sticker('@what_Arseny_are_you_bot', sti)
