@@ -13,6 +13,5 @@ def push(message):
 def stickers(message):
     sti = open('stickers/8.webm', 'rb')
     bot.send_sticker('@what_Arseny_are_you_bot', sti)
-    bot.send_sticker('@what_Arseny_are_you_bot', 'AAMCAgADGQEAAR4NKmQHDXuBHS-Zo-i650ecc7yXO0NUAALiJAAC3UR4SLAO9yJ-OtgeAQAHbQADLgQ')
-
+    
 bot.infinity_polling()
