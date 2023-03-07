@@ -7,7 +7,7 @@ def push(message):
     chseKey = types.ReplyKeyboardMarkup(resize_keyboard=True)
     btn = types.KeyboardButton('Жми!')
     chseKey.add(btn)
-    return bot.send_message(message.from_user.id, 'Жми, чтобы узнать, какой ты Арсений!', reply_markup=chseKey)
+    bot.send_message(message.from_user.id, 'Жми, чтобы узнать, какой ты Арсений!', reply_markup=chseKey)
 
 @bot.message_handler(func=lambda message: True)
 def stickers(file):
