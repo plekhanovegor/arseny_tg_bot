@@ -12,7 +12,7 @@ def push(message):
 @bot.message_handler(func=lambda message: True)
 def stickers(file):
     rnd = str(random.randint(1,9))
-    sti = open('stickers/'+rnd+'.webm', 'rb')
+    sti = open('stickers/1.webm', 'rb')
     bot.send_sticker('@what_Arseny_are_you_bot', sti)
 
 bot.infinity_polling()
